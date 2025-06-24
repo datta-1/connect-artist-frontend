@@ -1,4 +1,3 @@
-
 import { useState, useMemo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -27,8 +26,7 @@ const Artists = () => {
   const filteredArtists = useMemo(() => {
     return mockArtists.filter(artist => {
       const matchesSearch = artist.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           artist.bio.toLowerCase().includes(searchT
-.toLowerCase()) ||
+                           artist.bio.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            artist.category.some(cat => cat.toLowerCase().includes(searchTerm.toLowerCase()));
       
       const matchesCategory = !selectedCategory || artist.category.includes(selectedCategory);
