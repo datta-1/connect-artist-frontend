@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -185,7 +184,7 @@ const Dashboard = () => {
                   <Table>
                     <TableHeader>
                       <TableRow>
-                        <TableHea>Artist</TableHead>
+                        <TableHead>Artist</TableHead>
                         <TableHead>Event Type</TableHead>
                         <TableHead>Date</TableHead>
                         <TableHead>Location</TableHead>
